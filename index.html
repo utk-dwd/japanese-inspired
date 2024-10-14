@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo"><img src="img/logoweb.png" alt=""></div>
+        <nav>
+            <ul>
+                <li class="active">Projects</li>
+                <li>Contact</li>
+                <li>About</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="banner">
+        <div id="bg_city"></div>
+        <div class="content">
+            <div class="item">
+                <div>
+                    <p>UTKARSH DWIVEDI</p>
+                    <p>WEB DEVELOPER & DESIGNER</p>
+                </div>
+                <div>
+                    <p>WEB 3 & ML ENTHUSIAST</p>
+                    <p>SHOW CASE</p>
+                </div>
+            </div>
+            <div class="item title">
+                <p>JAPANESE INSPIRED</p>
+                <p>LIFESTYLE</p>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="friend">
+            <div class="me">
+                <h1>Utkarsh Dwivedi</h1>
+                <h2>Web-Developer & Designer</h2>
+                <p>The gsap object serves as the access point for most of GSAP's functionality. It's just a generic object with various methods and properties that create and control Tweens and Timelines, two of the most important concepts to understand.</p>
+            </div>
+            <ul>
+                <li><img src="img/1.png" alt=""></li>
+                <li><img src="img/2.png" alt=""></li>
+                <li><img src="img/3.png" alt=""></li>
+                <li><img src="img/4.png" alt=""></li>
+                <li><img src="img/5.png" alt=""></li>
+                <li><img src="img/6.png" alt=""></li>
+                <li><img src="img/7.png" alt=""></li>
+                <li><img src="img/8.png" alt=""></li>
+                <li><img src="img/9.png" alt=""></li>
+                <li><img src="img/10.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="lorem">
+            What is needed is an electronic payment system based on cryptographic proof instead of trust,
+            third party. Transactions that are computationally impractical to reverse would protect sellers
+            from fraud, and routine escrow mechanisms could easily be implemented to protect buyers. In
+            this paper, <br> we propose a solution to the double-spending problem using a peer-to-peer distributed
+            timestamp server to generate computational proof of the chronological order of transactions. The
+            system is secure as long as honest nodes collectively control more CPU power than any
+            cooperating group of attacker nodes. <br> We need a way for the payee to know that the previous owners did not sign any earlier
+            transactions. For our purposes, the earliest transaction is the one that counts, so we don't care
+            about later attempts to double-spend. The only way to confirm the absence of a transaction is to
+            be aware of all transactions. In the mint based model, the mint was aware of all transactions and
+            decided which arrived first. To accomplish this without a trusted party, transactions must be
+            publicly announced [1], and we need a system for participants to agree on a single history of the
+            order in which they were received. The payee needs proof that at the time of each transaction, the
+            majority of nodes agreed it was the first received. <br> The solution we propose begins with a timestamp server. A timestamp server works by taking a
+            hash of a block of items to be timestamped and widely publishing the hash, such as in a
+            newspaper or Usenet post [2-5]. The timestamp proves that the data must have existed at the
+            time, obviously, in order to get into the hash. Each timestamp includes the previous timestamp in
+            its hash, forming a chain, with each additional timestamp reinforcing the ones before it.
+             <br><br> The proof-of-work also solves the problem of determining representation in majority decision
+             making. If the majority were based on one-IP-address-one-vote, it could be subverted by anyone
+             able to allocate many IPs. Proof-of-work is essentially one-CPU-one-vote. The majority
+             decision is represented by the longest chain, which has the greatest proof-of-work effort invested
+             in it. If a majority of CPU power is controlled by honest nodes, the honest chain will grow the
+             fastest and outpace any competing chains.<br> To modify a past block, an attacker would have to
+             redo the proof-of-work of the block and all blocks after it and then catch up with and surpass the
+             work of the honest nodes. We will show later that the probability of a slower attacker catching up
+             diminishes exponentially as subsequent blocks are added.<br>
+             To compensate for increasing hardware speed and varying interest in running nodes over time,
+             the proof-of-work difficulty is determined by a moving average targeting an average number of
+             blocks per hour. If they're generated too fast, the difficulty increases. <br> 'Nodes always consider the longest chain to be the correct one and will keep working on
+             extending it. If two nodes broadcast different versions of the next block simultaneously, some
+             nodes may receive one or the other first. In that case, they work on the first one they received,
+             but save the other branch in case it becomes longer. The tie will be broken when the next proofof-work is found and one branch becomes longer; the nodes that were working on the other
+             branch will then switch to the longer one. <br><br> The incentive may help encourage nodes to stay honest. If a greedy attacker is able to
+             assemble more CPU power than all the honest nodes, he would have to choose between using it
+             to defraud people by stealing back his payments, or using it to generate new coins
+    </main>
+
+    
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="app.js"></script>
+
+</html>
